@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Проверка Excel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h2>📄 Проверка Excel-файла</h2>
+    <input type="file" id="fileInput" accept=".xlsx" />
+    <button onclick="handleFile()">🚀 Проверить</button>
+    <div id="check-status" class="status-message"></div>
+    <a id="downloadLink" style="display:none;" download="checked.xlsx">📥 Скачать результат</a>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="verify.js"></script>
+</body>
+</html>
